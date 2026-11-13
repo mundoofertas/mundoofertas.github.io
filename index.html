@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Meu espaço pessoal para compartilhar achados, ofertas e produtos úteis.">
+<title>Meu Espaço de Ofertas | Site pessoal de afiliado</title>
+<style>
+:root{--ink:#152238;--navy:#10233f;--blue:#2458d3;--gold:#f3c94f;--muted:#667085;--bg:#f5f7fb;--white:#fff;--line:#e5eaf2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
+a{color:inherit}.announcement{background:var(--navy);color:#e9efff;text-align:center;padding:8px 15px;font-size:12px}
+header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{max-width:1150px;margin:auto;padding:15px 20px;display:flex;justify-content:space-between;align-items:center;gap:18px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;min-width:0}.brand-mark{width:42px;height:42px;border-radius:13px;background:var(--navy);color:var(--gold);display:grid;place-items:center;font-size:21px;font-weight:900;flex-shrink:0}
+.brand-copy{min-width:0}.brand-name{display:block;font-weight:850;font-size:17px;line-height:1.2;overflow-wrap:anywhere}.brand-sub{font-size:11px;color:var(--muted)}
+.navlinks{display:flex;gap:20px;align-items:center}.navlinks a{text-decoration:none;font-size:13px;font-weight:750}.navlinks a:hover{color:var(--blue)}
+.hero{background:linear-gradient(125deg,#10233f,#2458d3);color:#fff;padding:62px 20px}.hero-inner{max-width:1110px;margin:auto;display:grid;grid-template-columns:1.25fr .75fr;gap:35px;align-items:center}
+.eyebrow{font-size:11px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase;color:var(--gold)}
+h1{font-size:clamp(34px,5vw,55px);letter-spacing:-1.6px;line-height:1.06;margin:13px 0 17px;max-width:700px}
+.hero p{max-width:620px;color:#e0e8fb;font-size:16px;margin:0 0 24px}
+.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:10px;background:var(--blue);color:#fff!important;text-decoration:none;padding:12px 17px;font-weight:800;font-size:14px;cursor:pointer}
+.btn.gold{background:var(--gold);color:var(--navy)!important}.btn.outline{background:transparent;border:1px solid #ffffff75;color:white!important}
+.profile-card{background:#ffffff12;border:1px solid #ffffff35;border-radius:22px;padding:27px;text-align:center}
+.avatar{width:92px;height:92px;margin:0 auto 14px;border-radius:50%;background:#ffffff20;border:2px solid #ffffff55;display:grid;place-items:center;font-size:39px}
+.profile-card strong{display:block;font-size:19px}.profile-card p{font-size:13px;margin:6px 0 0}
+.wrap{max-width:1110px;margin:auto;padding:0 20px}.search-wrap{margin-top:-24px;position:relative}.search{background:#fff;border:1px solid var(--line);box-shadow:0 10px 30px #10233f12;border-radius:14px;padding:11px;display:flex;gap:10px}
+.search input{border:0;outline:0;padding:10px;min-width:0;flex:1;font-size:14px}
+section.content{padding:35px 0 12px}.heading{display:flex;justify-content:space-between;align-items:end;gap:15px;margin:10px 0 18px}.heading h2{font-size:27px;letter-spacing:-.6px;margin:0}.heading p{font-size:13px;color:var(--muted);margin:5px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:19px 0 25px}.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:9px 14px;font-size:12px;font-weight:800;color:#344054;cursor:pointer}.chip.active,.chip:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.product{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.product:hover{transform:translateY(-3px);box-shadow:0 12px 25px #10233f10}
+.art{height:145px;display:grid;place-items:center;font-size:53px;background:linear-gradient(140deg,#edf2ff,#f9faff);position:relative}.tag{position:absolute;top:11px;left:11px;background:var(--gold);border-radius:5px;padding:4px 7px;font-size:10px;font-weight:900;color:var(--navy)}
+.product-body{padding:15px;display:flex;flex-direction:column;flex:1}.category{font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:900;color:var(--blue)}.product h3{font-size:15px;line-height:1.35;margin:7px 0}.product p{font-size:12px;color:var(--muted);margin:0 0 15px}.product .btn{width:100%;margin-top:auto}
+.notice{background:#fff9e4;border:1px solid #f1e4ad;color:#62500a;border-radius:12px;padding:14px 16px;font-size:12px;margin:24px 0 12px}
+.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:18px 0 35px}.about-card{background:#fff;border:1px solid var(--line);border-radius:14px;padding:19px}.about-card .emoji{font-size:25px}.about-card h3{font-size:15px;margin:8px 0 5px}.about-card p{font-size:12px;color:var(--muted);margin:0}
+.contact{background:#eaf0ff;border:1px solid #dbe5ff;border-radius:18px;padding:24px;display:flex;align-items:center;justify-content:space-between;gap:20px;margin:28px 0 45px}.contact h2{font-size:22px;margin:0 0 5px}.contact p{font-size:13px;color:#475467;margin:0}
+footer{background:var(--navy);color:#d8e2f7;padding:30px 20px}.footer-inner{max-width:1110px;margin:auto;display:grid;grid-template-columns:1fr 1fr;gap:25px}.footer-inner h3{color:#fff;margin:0 0 8px;font-size:15px}.footer-inner p{font-size:12px;margin:5px 0}.footer-inner a{color:#fff}.empty{grid-column:1/-1;background:#fff;border:1px dashed #cbd5e1;padding:30px;text-align:center;border-radius:12px;color:var(--muted)}
+@media(max-width:850px){.hero-inner{grid-template-columns:1fr}.profile-card{display:none}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.about-grid{grid-template-columns:1fr}.navlinks{gap:12px}}
+@media(max-width:520px){.nav{padding:12px}.brand-name{font-size:14px}.brand-sub{font-size:10px}.navlinks a{font-size:11px}.navlinks{gap:9px}.hero{padding:43px 17px}.wrap{padding:0 13px}.heading h2{font-size:23px}.grid{gap:10px}.art{height:115px;font-size:43px}.product-body{padding:11px}.product h3{font-size:13px}.product p{font-size:11px}.product .btn{font-size:12px;padding:10px 8px}.contact{align-items:flex-start;flex-direction:column}.footer-inner{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="announcement">Achados, recomendações e links de ofertas • Confira sempre as condições no site do vendedor</div>
+<header>
+  <nav class="nav">
+    <a class="brand" href="#inicio">
+      <span class="brand-mark" id="brandInitial">M</span>
+      <span class="brand-copy"><span class="brand-name" id="brandName">Meu Espaço de Ofertas</span><span class="brand-sub">Seleção pessoal de produtos</span></span>
+    </a>
+    <div class="navlinks"><a href="#produtos">Produtos</a><a href="#sobre">Sobre mim</a><a href="#contato">Contato</a></div>
+  </nav>
+</header>
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+    <div>
+      <div class="eyebrow">Minha vitrine pessoal</div>
+      <h1>Produtos úteis, achados interessantes e boas ideias.</h1>
+      <p>Bem-vindo(a)! Aqui compartilho sugestões de produtos para casa, tecnologia e dia a dia. Explore a seleção e confira todos os detalhes antes de comprar.</p>
+      <a class="btn gold" href="#produtos">Ver produtos <span aria-hidden="true">&nbsp;↓</span></a>
+      <a class="btn outline" href="#sobre" style="margin-left:8px">Conheça o site</a>
+    </div>
+    <div class="profile-card">
+      <div class="avatar" aria-hidden="true">👋</div>
+      <strong id="heroName">Seu nome aqui</strong>
+      <p>Compartilhando descobertas e produtos que podem facilitar o dia a dia.</p>
+    </div>
+  </div>
+</section>
+<div class="wrap search-wrap"><div class="search"><input id="search" type="search" placeholder="Buscar um produto..." aria-label="Buscar produtos"><button class="btn" id="searchButton">Buscar</button></div></div>
+<main class="wrap">
+  <section class="content" id="produtos">
+    <div class="heading"><div><h2>Minha seleção de produtos</h2><p>Escolha uma categoria ou pesquise o que você procura.</p></div></div>
+    <div class="chips">
+      <button class="chip active" data-category="Todos">Todos</button>
+      <button class="chip" data-category="Tecnologia">Tecnologia</button>
+      <button class="chip" data-category="Casa">Casa</button>
+      <button class="chip" data-category="Cozinha">Cozinha</button>
+      <button class="chip" data-category="Beleza">Beleza</button>
+      <button class="chip" data-category="Acessórios">Acessórios</button>
+    </div>
+    <div class="grid" id="productGrid">
+      <article class="product" data-category="Tecnologia" data-name="Fone de ouvido bluetooth"><div class="art">🎧<span class="tag">EM DESTAQUE</span></div><div class="product-body"><div class="category">Tecnologia</div><h3>Fone de ouvido Bluetooth</h3><p>Uma opção prática para música, chamadas e momentos de lazer.</p><a class="btn affiliate-link" href="https://meli.la/12G1Ev6" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Casa" data-name="Luminária de mesa led"><div class="art">💡</div><div class="product-body"><div class="category">Casa</div><h3>Luminária de mesa LED</h3><p>Uma ideia para iluminar o espaço de estudo ou trabalho.</p><a class="btn affiliate-link" href="https://meli.la/1sdf6Nq" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Cozinha" data-name="Garrafa térmica"><div class="art">🧴<span class="tag">DIA A DIA</span></div><div class="product-body"><div class="category">Cozinha</div><h3>Garrafa térmica</h3><p>Praticidade para levar sua bebida para onde for.</p><a class="btn affiliate-link" href="https://meli.la/2Arn64D" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Casa" data-name="Organizador multiuso"><div class="art">🧺</div><div class="product-body"><div class="category">Casa</div><h3>Organizador multiuso</h3><p>Uma opção para organizar objetos e aproveitar melhor o espaço.</p><a class="btn affiliate-link" href="https://meli.la/16qozpQ" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Tecnologia" data-name="Suporte para celular"><div class="art">📱</div><div class="product-body"><div class="category">Tecnologia</div><h3>Suporte para celular</h3><p>Mais praticidade para chamadas, vídeos e receitas.</p><a class="btn affiliate-link" href="https://meli.la/26bebhq" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Beleza" data-name="Kit de cuidados pessoais"><div class="art">🧴</div><div class="product-body"><div class="category">Beleza</div><h3>Kit de cuidados pessoais</h3><p>Confira opções para complementar sua rotina de cuidados.</p><a class="btn affiliate-link" href="https://meli.la/213A81E" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Acessórios" data-name="Mochila casual"><div class="art">🎒<span class="tag">VERSÁTIL</span></div><div class="product-body"><div class="category">Acessórios</div><h3>Mochila casual</h3><p>Modelos para estudos, trabalho e passeios.</p><a class="btn affiliate-link" href="https://meli.la/1wcYYp2" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+      <article class="product" data-category="Cozinha" data-name="Utensílios para cozinha"><div class="art">🍳</div><div class="product-body"><div class="category">Cozinha</div><h3>Utensílios para cozinha</h3><p>Ideias para ajudar nas tarefas do dia a dia.</p><a class="btn affiliate-link" href="https://meli.la/2HmRSxS" target="_blank" rel="noopener sponsored">Ver oferta</a></div></article>
+    </div>
+    <div class="notice"><strong>Transparência:</strong> este site pode conter links de afiliado. Se você comprar por um link elegível, posso receber comissão, sem custo adicional para você. Preços, estoque, frete e condições são definidos pelo vendedor e podem mudar.</div>
+  </section>
+  <section class="content" id="sobre">
+    <div class="heading"><div><h2>Sobre este espaço</h2><p>Um site pessoal para compartilhar recomendações e descobertas.</p></div></div>
+    <div class="about-grid">
+      <div class="about-card"><div class="emoji">🔎</div><h3>Seleção de produtos</h3><p>Reúno ideias de diferentes categorias para facilitar sua busca por produtos úteis.</p></div>
+      <div class="about-card"><div class="emoji">🛍️</div><h3>Compra segura</h3><p>Ao abrir uma oferta, confira descrição, avaliações, frete e regras diretamente na página do vendedor.</p></div>
+      <div class="about-card"><div class="emoji">🤝</div><h3>Recomendações transparentes</h3><p>Alguns links podem gerar comissão quando uma compra elegível é realizada.</p></div>
+    </div>
+  </section>
+  <section class="contact" id="contato">
+    <div><h2>Vamos conversar?</h2><p>Adicione aqui seu e-mail ou o link do seu WhatsApp para contato.</p></div>
+    <a class="btn" id="contactLink" href="mailto:contato@exemplo.com">Entrar em contato</a>
+  </section>
+</main>
+<footer><div class="footer-inner">
+  <div><h3 id="footerName">Meu Espaço de Ofertas</h3><p>Site pessoal independente de divulgação de produtos.</p><p>© <span id="year"></span> • Todos os direitos reservados.</p></div>
+  <div><h3>Informações importantes</h3><p>Este site não é o Mercado Livre e não representa oficialmente a plataforma. Marcas e produtos pertencem aos seus respectivos titulares.</p><p>Antes de publicar, configure seu nome, contato, links de afiliado e páginas de privacidade/termos conforme aplicável.</p></div>
+</div></footer>
+<script>
+// PERSONALIZAÇÃO: altere estes campos antes de publicar.
+const CONFIG = {
+  nome: "top",
+  nomeDoSite: "topachados",
+  contato: "@mundomercado2026"
+};
+function setText(id,value){document.getElementById(id).textContent=value}
+setText('brandName',CONFIG.nomeDoSite);
+setText('footerName',CONFIG.nomeDoSite);
+setText('heroName',CONFIG.nome);
+setText('brandInitial',(CONFIG.nomeDoSite.trim()[0]||'M').toLocaleUpperCase('pt-BR'));
+document.getElementById('contactLink').href=CONFIG.contato.includes('@')?'mailto:'+CONFIG.contato:CONFIG.contato;
+document.getElementById('contactLink').textContent=CONFIG.contato.includes('@')?'Enviar e-mail':'Entrar em contato';
+document.getElementById('year').textContent=new Date().getFullYear();
+
+const searchInput=document.getElementById('search');
+const cards=[...document.querySelectorAll('.product')];
+const chips=[...document.querySelectorAll('.chip')];
+let activeCategory='Todos';
+function filterProducts(){
+ const q=searchInput.value.trim().toLocaleLowerCase('pt-BR');
+ let shown=0;
+ cards.forEach(card=>{
+  const categoryOK=activeCategory==='Todos'||card.dataset.category===activeCategory;
+  const textOK=(card.dataset.name+' '+card.innerText).toLocaleLowerCase('pt-BR').includes(q);
+  card.style.display=categoryOK&&textOK?'flex':'none';
+  if(categoryOK&&textOK)shown++;
+ });
+ let empty=document.getElementById('emptyState');
+ if(!shown&&!empty){empty=document.createElement('div');empty.id='emptyState';empty.className='empty';empty.textContent='Nenhum produto encontrado. Tente outro termo ou categoria.';document.getElementById('productGrid').appendChild(empty)}
+ if(shown&&empty)empty.remove();
+}
+chips.forEach(chip=>chip.addEventListener('click',()=>{chips.forEach(c=>c.classList.remove('active'));chip.classList.add('active');activeCategory=chip.dataset.category;filterProducts()}));
+document.getElementById('searchButton').addEventListener('click',filterProducts);
+searchInput.addEventListener('input',filterProducts);
+</script>
+</body>
+</html>
